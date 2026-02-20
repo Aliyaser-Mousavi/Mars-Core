@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MarsCoders | MarsCore</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/svg" href="/favicon.png" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <div class="nebula-bg"></div>
+
+    <main class="master-panel">
+      <div class="top-bar">
+        <div class="system-id">SYSTEM_OS_v1.0</div>
+        <div id="timer">00:00:00</div>
+      </div>
+
+      <header>
+        <h1><span class="brand-name">MarsCoders</span> – MarsCore</h1>
+        <p>Ultimate Streaming & Recording Interface</p>
+      </header>
+
+      <video id="video" hidden></video>
+      <canvas id="visualizer"></canvas>
+
+      <div class="grid-controls">
+        <button id="open-btn" class="glass-btn primary">
+          <i data-lucide="monitor-dot"></i> Select Source
+        </button>
+
+        <div class="row">
+          <button
+            id="start-btn"
+            class="glass-btn secondary"
+            disabled
+            title="Start PiP"
+          >
+            <i data-lucide="external-link"></i>
+          </button>
+          <button
+            id="record-btn"
+            class="glass-btn record"
+            disabled
+            title="Start Recording"
+          >
+            <i data-lucide="circle-dot"></i>
+          </button>
+          <button
+            id="snap-btn"
+            class="glass-btn secondary"
+            disabled
+            title="Take Snapshot"
+          >
+            <i data-lucide="camera"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="log-console">
+        <span class="prefix">❯</span>
+        <span id="log-text">Awaiting System Initialization...</span>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
