@@ -86,7 +86,7 @@ recordBtn.onclick = () => {
     mediaRecorder.start();
     startTimer();
     recordBtn.classList.add("active");
-    recordBtn.innerHTML = `<i data-lucide="square"></i>`; // تغییر آیکون به توقف
+    recordBtn.innerHTML = `<i data-lucide="square"></i>`;
     log.innerText = "RECORDING_IN_PROGRESS...";
   } else {
     mediaRecorder.stop();

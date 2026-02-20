@@ -16,7 +16,7 @@ html,
 body {
   margin: 0;
   height: 100%;
-  overflow: hidden; /* جلوگیری کامل از اسکرول */
+  overflow: hidden;
 }
 
 body {
@@ -29,7 +29,6 @@ body {
   position: relative;
 }
 
-/* GPU safe background */
 .nebula-bg {
   position: fixed;
   inset: 0;
@@ -53,7 +52,7 @@ body {
   backdrop-filter: blur(40px);
   border: 1px solid var(--border);
   position: relative;
-  overflow: hidden; /* جلوگیری از overflow داخلی */
+  overflow: hidden;
   transform-style: preserve-3d;
   transition: transform 0.15s ease;
 }
